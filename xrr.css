@@ -336,12 +336,32 @@ body {
     height: 60px;
     background-color: #D9453B;
     position: absolute;
-    left: 45px;
-    top: 419px;
+    left: 42px;
+    top: 436px;
     z-index: 5;
     border-radius: 25px 37px 25px 53px;
+    transform-origin: 100px 30px;
     transform: rotate(21deg);
     box-shadow: -5px -17px 38px -20px rgb(255, 255, 255, 80%) inset;
+    animation: 2s ease-in-out 1s infinite lRotate;
+}
+@keyframes lRotate {
+    0% { 
+        transform: rotate(21deg);
+    }
+    10% { 
+        transform: rotate(30deg);
+    }
+    20% { 
+        transform: rotate(14deg);
+        border-radius: 30px 29px 25px 53px;
+    }
+    30% { 
+        transform: rotate(28deg);
+    }
+    40%,50%,60%,70%,80%,90%,100% { 
+        transform: rotate(21deg);
+    }
 }
 .arm-r {
     width: 100px;
